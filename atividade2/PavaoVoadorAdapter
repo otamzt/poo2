@@ -1,0 +1,17 @@
+public class PavaoVoadorAdapter implements Ave {
+    private Pavao pavao;
+
+    public PavaoVoadorAdapter(Pavao pavao) {
+        this.pavao = pavao;
+    }
+
+    @Override
+    public void voar() {
+        System.out.println("O pavão está planando um pouco.");
+    }
+
+    @Override
+    public void emitirSom() {
+        pavao.emitirSom();
+    }
+}

@@ -1,0 +1,11 @@
+public class PedidoNaLoja extends Pedido {
+    @Override
+    protected void processarPagamento(double total) {
+        System.out.println("Pagamento na loja processado. Total: R$" + total);
+    }
+
+    @Override
+    protected boolean necessitaEntrega() {
+        return false;
+    }
+}
